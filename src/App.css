@@ -107,31 +107,51 @@ header {
   color:white;
 }
 
-.message{
-  color:white;
-  background:#6b6b6b;
-  margin:5px;
-  border-radius:16px;
-  padding:10px 10px;
-  font-size:14px;
-  display:inline-block;
-  max-width: 250px;
-  overflow-wrap: break-word;
-}
-
-.message-wrap{
-  width:100%;
-}
-
 .messages{
   height:calc(100vh - 105px);
   width:100vw;
   position:absolute;
   top:50px;
-  left:10px;
+  left:0px;
   display:flex;
   flex-direction: column-reverse;
-  overflow-y:scroll;
+  overflow-y:auto;
+  padding:0px 10px;
+}
+
+.message{
+  position:relative;
+  margin-top: 10px;
+
+}
+
+.msg-text{
+  color:white;
+  background:#6b6b6b;
+  margin:5px;
+  border-radius:16px;
+  padding:10px 10px;
+  display:inline-block;
+  max-width: 250px;
+  overflow-wrap: break-word;
+}
+
+.msg-name{
+  color:white;
+  font-size:11px;
+  position:absolute;
+  top:-9px;
+  left:5px;
+}
+
+.message-wrap{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.message-wrap[from="me"]{
+  justify-content: flex-end;
 }
 
 .edit-username{
