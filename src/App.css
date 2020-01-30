@@ -64,8 +64,8 @@ header {
 .text-input {
   position:absolute;
   bottom:0;
-  left:0;
-  width:100%;
+  left:30px;
+  width:90%;
   height:55px;
   background:rgba(0,0,0,0);
 }
@@ -81,7 +81,7 @@ header {
   display:block;
   width:90%;
   top:20%;
-  left:10px;
+  left:20px;
 }
 
 .icon {
